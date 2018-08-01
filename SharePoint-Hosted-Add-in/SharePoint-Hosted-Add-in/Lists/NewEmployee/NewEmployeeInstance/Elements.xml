@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="新员工" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/NewEmployee" Description="新员工列表">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">张三</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">李斯</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">赵一</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">钱儿</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

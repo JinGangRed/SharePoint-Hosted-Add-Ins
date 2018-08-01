@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}"
+       Name="Level"
+       DisplayName="员工级别"
+       Type="Text"
+       Required="TRUE"
+       Group="Employee">
+  </Field>
+</Elements>

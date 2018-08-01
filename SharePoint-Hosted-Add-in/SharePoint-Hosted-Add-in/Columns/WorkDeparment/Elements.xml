@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}"
+       Name="WorkDeparment"
+       DisplayName="工作部门"
+       Type="Choice"
+       Required="FALSE"
+       Group="Employee">
+    <CHOICES>
+      <CHOICE>开发部</CHOICE>
+      <CHOICE>销售部</CHOICE>
+      <CHOICE>人事部</CHOICE>
+      <CHOICE>管理部</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">开发部</MAPPING>
+      <MAPPING Value="2">销售部</MAPPING>
+      <MAPPING Value="3">人事部</MAPPING>
+      <MAPPING Value="4">管理部</MAPPING>
+    </MAPPINGS>
+  </Field>
+</Elements>
