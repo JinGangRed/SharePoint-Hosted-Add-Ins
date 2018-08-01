@@ -1,53 +1,88 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="NewEmployee" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/NewEmployee" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="NewEmployee" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/NewEmployee" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
   <MetaData>
     <ContentTypes>
-      
-      
-    <ContentType ID="0x010066ddc1fb24e5400094e8646d4484248f" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
-        <Folder TargetName="Item" />
-      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+
+
+      <ContentType ID="0x010004FFBC0EFEBB4A5FB62F4AC4250C3E51" Name="EmployeeBaseInfo" Group="Employee" Description="员工基本信息" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工姓名" />
+          <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="员工姓名" />
+          <FieldRef ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" DisplayName="员工级别" Required="TRUE" Name="Level" />
+          <FieldRef ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" DisplayName="工作年限" Required="FALSE" Name="WorkYear" />
+          <FieldRef ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" DisplayName="工作部门" Required="FALSE" Name="WorkDeparment" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
     <Fields>
-      
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="姓名" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /></Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="姓名" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" Name="Level" DisplayName="员工级别" Type="Text" Required="TRUE" Group="Employee"></Field>
+      <Field ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" Name="WorkYear" DisplayName="工作年限" Type="Text" Required="FALSE" Group="Employee"></Field>
+      <Field ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" Name="WorkDeparment" DisplayName="工作部门" Type="Choice" Required="FALSE" Group="Employee">
+        <CHOICES>
+          <CHOICE>开发部</CHOICE>
+          <CHOICE>销售部</CHOICE>
+          <CHOICE>人事部</CHOICE>
+          <CHOICE>管理部</CHOICE>
+        </CHOICES>
+        <MAPPINGS>
+          <MAPPING Value="1">开发部</MAPPING>
+          <MAPPING Value="2">销售部</MAPPING>
+          <MAPPING Value="3">人事部</MAPPING>
+          <MAPPING Value="4">管理部</MAPPING>
+        </MAPPINGS>
+      </Field>
+    </Fields>
     <Views>
-      
-      
-    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          
-          <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="员工"></FieldRef></ViewFields>
+          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工"></FieldRef>
+          <FieldRef Name="Level" ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" />
+          <FieldRef Name="WorkYear" ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" />
+          <FieldRef Name="WorkDeparment" ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" />
+        </ViewFields>
         <Query>
           <OrderBy>
-            
-          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
         </ParameterBindings>
-      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          
-        <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工"></FieldRef></ViewFields>
+
+          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工"></FieldRef>
+          <FieldRef Name="Level" ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" />
+          <FieldRef Name="WorkYear" ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" />
+          <FieldRef Name="WorkDeparment" ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" />
+        </ViewFields>
         <Query>
           <OrderBy>
-            
-          <FieldRef Name="ID"></FieldRef></OrderBy>
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
-      </View></Views>
+      </View>
+    </Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />

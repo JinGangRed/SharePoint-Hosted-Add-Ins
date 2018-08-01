@@ -5,6 +5,9 @@
       <Rows>
         <Row>
           <Field Name="Title">张三</Field>
+          <Field Name="Level">3</Field>
+          <Field Name="WorkDeparment">开发部</Field>
+          <Field Name="WorkYear">3</Field>
         </Row>
         <Row>
           <Field Name="Title">李斯</Field>

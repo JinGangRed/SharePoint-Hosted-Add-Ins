@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}"
+       Name="WorkYear"
+       DisplayName="工作年限"
+       Type="Text"
+       Required="FALSE"
+       Group="Employee">
+  </Field>
+</Elements>

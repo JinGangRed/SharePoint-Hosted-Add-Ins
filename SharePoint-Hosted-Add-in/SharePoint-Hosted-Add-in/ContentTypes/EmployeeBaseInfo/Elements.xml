@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- 父内容类型: Item (0x01) -->
+  <ContentType ID="0x010004FFBC0EFEBB4A5FB62F4AC4250C3E51" Name="EmployeeBaseInfo" Group="Employee" Description="员工基本信息" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工姓名" />
+      <FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="员工姓名" />
+      <FieldRef ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" DisplayName="员工级别" Required="TRUE" Name="Level" />
+      <FieldRef ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" DisplayName="工作年限" Required="FALSE" Name="WorkYear" />
+      <FieldRef ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" DisplayName="工作部门" Required="FALSE" Name="WorkDeparment" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

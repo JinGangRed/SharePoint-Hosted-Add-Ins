@@ -44,6 +44,8 @@
   <ItemGroup>
     <Content Include="Columns\Level\Elements.xml" />
     <Content Include="Columns\WorkDeparment\Elements.xml" />
+    <Content Include="Columns\WorkYear\Elements.xml" />
+    <Content Include="ContentTypes\EmployeeBaseInfo\Elements.xml" />
     <Content Include="Lists\NewEmployee\Elements.xml" />
     <Content Include="Lists\NewEmployee\NewEmployeeInstance\Elements.xml" />
     <Content Include="Lists\NewEmployee\Schema.xml" />
@@ -55,6 +57,12 @@
     </None>
     <None Include="Columns\WorkDeparment\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{05f3b521-cf50-4ba5-93f6-d80b2ba8d846}</SharePointProjectItemId>
+    </None>
+    <None Include="Columns\WorkYear\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4020fe2d-f90e-4259-aaa3-611ea9cfa820}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\EmployeeBaseInfo\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{46e4992a-53ba-4629-9bb8-c69b7d09c1bc}</SharePointProjectItemId>
     </None>
     <None Include="Lists\NewEmployee\NewEmployeeInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{71014c0c-83c2-4f84-85ce-2596f2358fa6}</SharePointProjectItemId>
@@ -112,6 +120,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
