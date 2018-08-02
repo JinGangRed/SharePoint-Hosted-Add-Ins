@@ -51,6 +51,7 @@
     <Content Include="Lists\NewEmployee\NewEmployeeInstance\Elements.xml" />
     <Content Include="Lists\NewEmployee\Schema.xml" />
     <Content Include="Pages\CustomPages\Help.aspx" />
+    <Content Include="Scripts\CustomRenders\LevelRender.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
