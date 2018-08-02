@@ -7,6 +7,7 @@
     <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="CustomRenders\LevelRender.js" Target="Scripts\CustomRenders\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomJS\LevelRender.js" Target="Scripts\CustomJS\" Type="ElementFile" />
+    <ProjectItemFile Source="CustomJS\Add-in.js" Target="Scripts\CustomJS\" Type="ElementFile" />
   </Files>
 </ProjectItem>

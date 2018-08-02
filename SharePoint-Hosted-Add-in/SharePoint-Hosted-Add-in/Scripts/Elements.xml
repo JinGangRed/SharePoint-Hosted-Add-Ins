@@ -6,6 +6,7 @@
     <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
     <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\CustomRenders\LevelRender.js" Url="Scripts/CustomRenders/LevelRender.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\CustomJS\LevelRender.js" Url="Scripts/CustomJS/LevelRender.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\CustomJS\Add-in.js" Url="Scripts/CustomJS/Add-in.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

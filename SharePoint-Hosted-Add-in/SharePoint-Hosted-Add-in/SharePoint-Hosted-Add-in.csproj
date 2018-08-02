@@ -54,7 +54,8 @@
     <Content Include="RibbonActions\CustomAction\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
     </Content>
-    <Content Include="Scripts\CustomRenders\LevelRender.js" />
+    <Content Include="Scripts\CustomJS\Add-in.js" />
+    <Content Include="Scripts\CustomJS\LevelRender.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />

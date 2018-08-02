@@ -19,6 +19,7 @@
 
     <!-- 向以下文件中添加 JavaScript -->
     <script type="text/javascript" src="../Scripts/App.js"></script>
+    <script type="text/javascript" src="../Scripts/CustomJS/Add-in.js"></script>
 </asp:Content>
 
 <%-- 以下 Content 元素中的标记将放置在页面的 TitleArea 中 --%>
@@ -41,5 +42,9 @@
         <asp:HyperLink NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/CustomPages/Help.aspx'" runat="server"
             Text="自定义帮助页面" />
     </p>
-    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="HomePage1" Title="loc:full" />
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="HomePage1" Title="loc:full" >
+    </WebPartPages:WebPartZone>
+    <p>
+        <asp:Button Text="获得所有没有等级的员工" runat="server" OnClientClick="return AddLevel(1)" />
+    </p>
 </asp:Content>

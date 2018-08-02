@@ -6,7 +6,7 @@
        DisplayName="员工级别"
        Type="Text"
        Required="TRUE"
-       JSLink="~site/Scripts/CustomRenders/LevelRender.js"
+       JSLink="~site/Scripts/CustomJS/LevelRender.js"
        Group="Employee">
   </Field>
 </Elements>
