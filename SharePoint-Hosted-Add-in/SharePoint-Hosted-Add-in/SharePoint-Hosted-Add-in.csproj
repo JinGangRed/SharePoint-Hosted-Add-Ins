@@ -51,6 +51,9 @@
     <Content Include="Lists\NewEmployee\NewEmployeeInstance\Elements.xml" />
     <Content Include="Lists\NewEmployee\Schema.xml" />
     <Content Include="Pages\CustomPages\Help.aspx" />
+    <Content Include="RibbonActions\CustomAction\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <Content Include="Scripts\CustomRenders\LevelRender.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -81,6 +84,9 @@
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="RibbonActions\CustomAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32f4524b-bb80-4fd6-885a-17f512659954}</SharePointProjectItemId>
+    </None>
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{642419a8-0256-4ffd-b14d-2ada2055012b}</SharePointProjectItemId>

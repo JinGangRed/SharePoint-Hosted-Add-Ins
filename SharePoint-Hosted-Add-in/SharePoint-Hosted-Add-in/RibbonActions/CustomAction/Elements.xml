@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="94d99984-afe0-410b-a05b-8b7818168fd8.CustomAction"
+                RegistrationType="List"
+                RegistrationId="{$ListId:Lists/List;}"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="调用“CustomAction”操作">
+    <CommandUIExtension>
+      <!-- 
+      使用要为自定义操作启用的控件和命令操作
+      更新下方的 UI 定义。
+      -->
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Calendar.Events.Actions.Controls._children">
+          <Button Id="Ribbon.Calendar.Events.Actions.CustomActionButton"
+                  Alt="自定义功能区控件"
+                  Sequence="100"
+                  Command="Invoke_CustomActionButtonRequest"
+                  LabelText="自定义功能区控件"
+                  TemplateAlias="o1"
+                  Image32by32="_layouts/15/images/placeholder32x32.png"
+                  Image16by16="_layouts/15/images/placeholder16x16.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="Invoke_CustomActionButtonRequest"
+                          CommandAction="~appWebUrl/Lists/NewEmployee?{StandardTokens}&amp;SPListItemId={SelectedItemId}&amp;SPListId={SelectedListId}"/>
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+</Elements>
