@@ -42,7 +42,8 @@
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
-          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工"></FieldRef>
+          <!--<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="姓名"></FieldRef>-->
+          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工姓名"></FieldRef>
           <FieldRef Name="Level" ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" />
           <FieldRef Name="WorkYear" ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" />
           <FieldRef Name="WorkDeparment" ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" />
@@ -66,7 +67,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
-          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工"></FieldRef>
+          <FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="员工姓名"></FieldRef>
           <FieldRef Name="Level" ID="{e7b82c39-5c7a-47b7-87a0-9a81bce66129}" />
           <FieldRef Name="WorkYear" ID="{63f57960-df57-4845-a1c2-ecba5a1dfcf2}" />
           <FieldRef Name="WorkDeparment" ID="{e30de6ca-b302-49dd-930b-d9be7bfa0390}" />
