@@ -38,6 +38,8 @@
     <p>
         <asp:HyperLink NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/NewEmployee/AllItems.aspx'" runat="server"
             Text="新员工组件测试" />
+        <asp:HyperLink NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Pages/CustomPages/Help.aspx'" runat="server"
+            Text="自定义帮助页面" />
     </p>
     <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="HomePage1" Title="loc:full" />
 </asp:Content>

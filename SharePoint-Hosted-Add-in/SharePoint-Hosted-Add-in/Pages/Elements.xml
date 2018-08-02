@@ -27,5 +27,6 @@
       ]]>
       </AllUsersWebPart>
     </File>
+    <File Path="Pages\CustomPages\Help.aspx" Url="Pages/CustomPages/Help.aspx" ReplaceContent="TRUE" />
   </Module>
 </Elements>
